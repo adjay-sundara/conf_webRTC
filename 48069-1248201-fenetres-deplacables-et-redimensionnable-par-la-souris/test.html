@@ -1,0 +1,42 @@
+<html>
+
+<title> :: TEST PdcFenetre :: </title>		
+
+<head>		
+	
+
+
+<script src="PdcFenetre.js" language="javascript"></script>
+
+<script>
+	function test(){		
+		CreerPdcFenetre( "305", 500, 200, 350, 150, "<a href=\"http://planete305.free.fr/\"><img src=\"305.jpg\"></a>");
+		
+		pdc = document.createElement("div");
+		pdc.innerHTML = "<a href=\"http:www.google.fr\"> google</a>";		
+		pdc.innerHTML += "<br><br>Celui là tout le monde connait !!! Sans doute le meilleur moteur de recherche au monde! oui oui, google est ton ami .";		
+		 CreerPdcFenetre( "google", 100, 250, 50, 150, pdc);
+		
+		pdc = document.createElement("div");
+		pdc.innerHTML = "<a href=\"http://www.javascriptfr.com/\"> javascriptfr</a>";
+		pdc.innerHTML += "<br> Visitez ce site pour tout connaitre du javascript !!!!";
+		CreerPdcFenetre( "javascript by flammeon", 100, 150, 200, 150, pdc);				
+		
+	}
+	
+		
+	
+</script>
+
+</head>
+	
+<body onLoad="javascript:test();" >	
+
+
+		
+</body>
+
+<script>
+
+</script>
+</html>
